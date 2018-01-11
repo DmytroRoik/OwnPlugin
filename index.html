@@ -3,9 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Own plugin</title>
+  <style>
+  ul{
+    list-style: none;
+  }
+  .repoList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 0;
+    background-color: rgba(122,122,122,.5)
+  }
+  .repoList li{
+    display: flex;
+  }
+
+  .repoList li:nth-child(2n){
+    background-color: white;
+  }
+  .repoItem:nth-child(1){
+    width:25px;
+  }
+
+  .repoItem{
+    width: 20%;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 5px;
+    overflow: hidden;
+  }
+  .list-header{
+
+    background-color: rgba(12,100,100,.4);
+  }
+</style>
 </head>
 <body>
-	
-	<script src="index.js"></script>
+	<h1>List of repos</h1>
+  <ul class="repoList">
+    <li>
+      <span class="repoItem list-header">№</span>
+      <span class="repoItem list-header">Name</span>
+      <span class="repoItem list-header">created at</span>
+      <span class="repoItem list-header">Owner</span>
+      <span class="repoItem list-header">language</span>
+      <span class="repoItem list-header">url</span>
+    </li>
+
+  </ul>
+
+  <script src="index.js"></script>
 </body>
 </html>
